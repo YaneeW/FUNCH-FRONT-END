@@ -1,13 +1,15 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import NavbarComponent from './components/NavbarComponent.vue';
+import NavbarComponent from './components/layout/NavbarComponent.vue';
+import AllRoomComponent from './components/layout/AllRoomComponent.vue';
 </script>
 
 <template>
-  <div>
+  <!-- <div class="main-container"> -->
       <img src="./assets/manuel-moreno-DGa0LQ0yDPc-unsplash.jpg" class="image" alt="image" />
-  </div>
-  <NavbarComponent/>
+      <NavbarComponent/>
+      <AllRoomComponent/>
+  <!-- </div> -->
 </template>
 
 <style scoped>
@@ -18,6 +20,7 @@ import NavbarComponent from './components/NavbarComponent.vue';
   position: absolute; 
   top: 0;
   left: 0;
-  /* z-index: -1; */
 }
+
+
 </style>

@@ -1,11 +1,73 @@
-.main-container{
+.navbar-container{
     z-index: 10;
     position: relative;
 }
 
 .navbar {
-    background-color: aqua;
+    background-color: rgba(123, 113, 113, 0.7);
     width: 1000px;
-    height: 15vh;
+    height: 120px;
     border-radius: 20px;
+}
+
+.content {
+    width: 100%;
+}
+
+.logo {
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 50px;
+   color:#f5f5dc;
+   margin-left:20px;
+   width:800px
+}
+
+input{
+    background-color: white;
+    border-radius: 0.375rem;
+    border-color: white;
+    border-width: 0px;
+    padding: 7.5px;
+    cursor: pointer;
+}
+  
+  .icon-calendar {
+    position: absolute;
+    right: 30px;
+    top:10px;
+    color: gray;
+    z-index: 11;
+    cursor: pointer;
+  }
+
+.label-box {
+    display: block;
+    text-align: start;
+    margin-left: 20px;
+}
+
+.label-room {
+    display: block;
+    text-align: start;
+}
+
+.box-booking {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-booking {
+    margin-top: 20px;
+    width: 150px;
+}
+
+.btn-auth {
+    width: 130px;
+    font-weight: 500;
+    background-color: rgba(54, 53, 53, 0.7);
+}
+
+.custom-datepicker {
+    color: black;
 }
