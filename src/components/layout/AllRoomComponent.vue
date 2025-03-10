@@ -65,9 +65,9 @@ export default {
             try{
                 API.get("rooms/room-types")
                 .then(response=>{
-                    // console.log("response",response)
+ 
                     if(response.status === 200){
-                        // this.rooms = response.data.data
+
                         response.data.data.forEach(room=>{
                             if(room.room_type === 'เตียงเดี่ยว'){
                                 this.superior.push(room)
@@ -76,7 +76,6 @@ export default {
                             }
                         })
                     }
-                    console.log("room",this.superior,this.deluxe)
                 })
                 .catch(error=>{
                     console.log("error",error)
