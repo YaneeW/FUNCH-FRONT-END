@@ -172,7 +172,7 @@ export default {
                 API.post("/auth/login", loginForm)
                 .then(response=>{
                     Swal.fire({
-                        title: "Register sucess",
+                        title: "Login success",
                         icon: "success",
                         draggable: true
                     });
@@ -201,7 +201,7 @@ export default {
                 .then(response=>{
                     this.modalregister = false
                     Swal.fire({
-                        title: "Register sucess",
+                        title: "Register success",
                         icon: "success",
                         draggable: true
                     });

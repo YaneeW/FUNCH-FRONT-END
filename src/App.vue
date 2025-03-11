@@ -1,5 +1,4 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 import NavbarComponent from './components/layout/NavbarComponent.vue';
 import AllRoomComponent from './components/layout/AllRoomComponent.vue';
 </script>
