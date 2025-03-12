@@ -177,7 +177,7 @@ export default {
                         draggable: true
                     });
                     this.isLogin = true;
-                    
+                    console.log("res",response)
                 })
                 .catch(error=>{
                     Swal.fire({
@@ -254,12 +254,22 @@ export default {
                 check_in_date: this.bookingDetails.check_in_date,
                 check_out_date: this.bookingDetails.check_out_date
             }
-            console.log('req', req)
            
             try {
                 API.post("/rooms/booking", req) 
                 .then(response => {
                     console.log("Room booked successfully");
+                    Swal.fire({
+                        title: "Booking success",
+                        icon: "success",
+                        draggable: true,
+                        timer: 1500
+                    });
+                    setTimeout(()=>{
+                        var url = window.location.origin + "/dashboard/usage/projects";
+                        window.open(url,"_self")
+                    },1500)
+                   
                 })
                 .catch(error => {
                     console.log("Error booking room", error);
